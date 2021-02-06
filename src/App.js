@@ -6,6 +6,7 @@ import Clock from './components/clock/Clock';
 import Navigation from "./components/navigation/Navigation"
 import Contact from "./components/contact/Contact"
 import Error from "./components/error/Error"
+import Jeopadry from ".component/jeopadry/Jeopadry"
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/contact" component={Contact}/>
         <Route  path="/Welcome/:name" component={Welcome}/>
         <Route  component={Error}/>
+        <Route exact path="/jeopardy"component={Jeopadry}/>
       </Switch>
     </div>
   );
